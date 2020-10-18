@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS student;
+
+CREATE TABLE student
+(
+   sno         INT             auto_increment,
+   name        VARCHAR(200)    NULL,
+   age         INT             NULL,
+    PRIMARY KEY(sno)
+) CHARACTER SET = utf8;
+
+INSERT INTO student(sno, name, age) VALUES (1, 'aaa', 19);
+INSERT INTO student(sno, name, age) VALUES (2, 'bbb', 19);
+INSERT INTO student(sno, name, age) VALUES (3, 'ccc', 20);
+INSERT INTO student(sno, name, age) VALUES (4, 'ddd', 21);
+INSERT INTO student(sno, name, age) VALUES (110, 'eee', 21);
+INSERT INTO student(sno, name, age) VALUES (111, 'fff', 16);

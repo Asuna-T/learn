@@ -1,0 +1,14 @@
+--建表语句
+create table student
+(
+ sno         int             auto_increment,
+ name        varchar(200)    null,
+ age         int             null,
+    PRIMARY KEY(sno)
+) character set = utf8;
+
+--查询学号为110的学生姓名以及年龄
+SELECT name, age from student WHERE sno=110;
+
+--修改学号为110的学生的年龄为16
+UPDATE student SET age=16 WHERE sno=110;

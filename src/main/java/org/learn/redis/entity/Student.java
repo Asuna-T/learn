@@ -5,10 +5,7 @@ public class Student {
     private String name;
     private int age;
 
-    //构造函数
-    public Student() {
-
-    }
+    public Student() {}
 
     public Student(int sno, String name, int age) {
         this.sno = sno;

@@ -22,7 +22,7 @@ public class RedisFactory {
             config.setMinEvictableIdleTimeMillis(60);
             config.setTimeBetweenEvictionRunsMillis(30);
             config.setBlockWhenExhausted(false);
-            URI uri = URI.create("redis://192.168.88.128:6379");
+            URI uri = URI.create("redis://127.0.0.1:6379");
             pool = new JedisPool(config, uri, 2000, 2000);
         }
         return pool;

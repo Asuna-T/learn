@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 @SpringBootTest(classes = AppMain.class)
 public class redisTest {
     @Resource
-    private StudentService sService;
+    private StudentService service;
 
 
 //    Redis test
@@ -33,8 +33,7 @@ public class redisTest {
 
     @Test
     public void testTryGetVal() {
-        Student result = sService.findBySno(110);
-        System.out.println("Found.");
+        Student result = service.findBySno(1);
         System.out.println(result);
 
     }
